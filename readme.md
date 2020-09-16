@@ -24,3 +24,5 @@ $\Delta u(k)=K_{p}(e(k)-e(k-1))+K_{i} e(k)+K_{d}(e(k)-2 e(k-1)+e(k-2))$
 
 # filter
 ## KalmanFilter
+## FIRFilter
+## ellipsefilter
