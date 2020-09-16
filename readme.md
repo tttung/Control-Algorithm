@@ -1,3 +1,11 @@
+# BalanceCar
+
+# flightControl
+
+# Mppt
+
+# navigation
+
 # PID
 $u(t)=K_{p} e(t)+K_{i} \int_{0}^{t} e(\tau) d \tau+K_{d} \frac{d e(t)}{d t}$
 * P：比例控制，就是把实际偏差放大或者缩小一定倍数，然后作为输出
@@ -13,3 +21,6 @@ $u(k)=K_{p} e_{k}+K_{i} \sum_{i=1}^{k} e(i) \Delta t+K_{d} \frac{e(k)-e(k-1)}{\D
 ## 增量式PID
 $\Delta u(k)=K_{p}(e(k)-e(k-1))+K_{i} e(k)+K_{d}(e(k)-2 e(k-1)+e(k-2))$
 * 增量式PID计算结果表示控制信号的相对大小
+
+# filter
+## KalmanFilter
