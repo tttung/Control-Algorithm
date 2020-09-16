@@ -1,0 +1,41 @@
+NET clk						  	LOC = V10 | IOSTANDARD = "LVCMOS33";       ## system CLK 
+Net clk TNM_NET = sys_clk;
+TIMESPEC TS_sys_clk = PERIOD sys_clk 50 MHz;
+
+NET reset                    LOC = N4 | IOSTANDARD = "LVCMOS15"; ## 1
+
+########USB Serial RS232 Pin define#####################
+//NET rx                         LOC = B2 | IOSTANDARD = "LVCMOS33";		  ## Uart RXD:U8_TXD
+//NET tx                         LOC = C4 | IOSTANDARD = "LVCMOS33"; 		  ## Uart TXD:U8_RXD
+
+#ad7606Ïà¹ØÒý½Å
+NET ad1_in<0>                  LOC = R10 | IOSTANDARD = "LVCMOS33";       ## 16 EX_IO2_29P
+NET ad1_in<1>                  LOC = V11 | IOSTANDARD = "LVCMOS33";       ## 13 EX_IO2_23N
+NET ad1_in<2>                  LOC = U11 | IOSTANDARD = "LVCMOS33";        ## 14 EX_IO2_23P
+NET ad1_in<3>                  LOC = V12 | IOSTANDARD = "LVCMOS33";        ## 11 EX_IO2_19N
+NET ad1_in<4>                  LOC = T12 | IOSTANDARD = "LVCMOS33";        ## 12 EX_IO2_19P
+NET ad1_in<5>                  LOC = V13 | IOSTANDARD = "LVCMOS33";        ## 9 EX_IO2_14N
+NET ad1_in<6>                  LOC = U13 | IOSTANDARD = "LVCMOS33";        ## 10 EX_IO2_14P
+NET ad1_in<7>                  LOC = V15 | IOSTANDARD = "LVCMOS33";        ## 7 EX_IO2_5N
+NET ad1_in<8>                  LOC = U15 | IOSTANDARD = "LVCMOS33";        ## 8 EX_IO2_5P
+NET ad1_in<9>                  LOC = V16 | IOSTANDARD = "LVCMOS33";        ## 5 EX_IO2_2N
+NET ad1_in<10>                 LOC = U16 | IOSTANDARD = "LVCMOS33";      ## 6 EX_IO2_2P
+NET ad1_in<11>                 LOC = N11 | IOSTANDARD = "LVCMOS33";      ## 3 EX_IO2_15N
+
+NET ad1_clk                    LOC = M11 | IOSTANDARD = "LVCMOS33";       ## 4 EX_IO2_15P
+
+NET ad2_in<0>                  LOC = M10 | IOSTANDARD = "LVCMOS33";       ## 30 EX_IO2_22P
+NET ad2_in<1>                  LOC = T11 | IOSTANDARD = "LVCMOS33";       ## 27 EX_IO2_16N
+NET ad2_in<2>                  LOC = R11 | IOSTANDARD = "LVCMOS33";        ## 28 EX_IO2_16P
+NET ad2_in<3>                  LOC = P11 | IOSTANDARD = "LVCMOS33";        ## 25 EX_IO2_20N
+NET ad2_in<4>                  LOC = N10 | IOSTANDARD = "LVCMOS33";        ## 26 EX_IO2_20P
+NET ad2_in<5>                  LOC = V6 | IOSTANDARD = "LVCMOS33";        ## 23 EX_IO2_L45N
+NET ad2_in<6>                  LOC = T6 | IOSTANDARD = "LVCMOS33";        ## 24 EX_IO2_L45P
+NET ad2_in<7>                  LOC = V7 | IOSTANDARD = "LVCMOS33";        ## 21 EX_IO2_L43N
+NET ad2_in<8>                  LOC = U7 | IOSTANDARD = "LVCMOS33";        ## 22 EX_IO2_L43P
+NET ad2_in<9>                  LOC = V8 | IOSTANDARD = "LVCMOS33";        ## 19 EX_IO2_L41N
+NET ad2_in<10>                 LOC = U8 | IOSTANDARD = "LVCMOS33";      ## 20 EX_IO2_L41P
+NET ad2_in<11>                 LOC = P8 | IOSTANDARD = "LVCMOS33";      ## 17 EX_IO2_L44N
+
+NET ad2_clk                    LOC = N7 | IOSTANDARD = "LVCMOS33";       ## 18 EX_IO2_L44P
+
